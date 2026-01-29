@@ -37,7 +37,7 @@ Then open the PKG as usual. The same binary will be shipped once we have a signe
 ## Requirements
 
 - **macOS 13** (Ventura) or later
-- **Apple Silicon** or **Intel** Mac
+- **Apple Silicon**
 - Apple's Virtualization.framework (included with macOS)
 
 ---
