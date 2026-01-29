@@ -127,7 +127,7 @@ Apple's Virtualization.framework only allows 2 macOS VMs to run at the same time
 
 ## Feedback and beta signup
 
-- **Bugs and feature requests:** [Open an issue](https://github.com/your-org/CiderStack-Beta/issues).
+- **Bugs and feature requests:** [Open an issue](https://github.com/ciderstack/CiderStack-Beta/issues).
 - **Join the beta list:** (Add your signup link, e.g. typeform or email.)
 
 We're in open beta with an unsigned installer—here's how to run it and what to expect. Thanks for trying CiderStack.
