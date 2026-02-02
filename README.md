@@ -26,6 +26,8 @@ Automate everything from the CLI
 
 All on your own hardware.
 
+https://ciderstack.sfo3.cdn.digitaloceanspaces.com/Images/AllMachines.png
+
 Why CiderStack?
 
 You own the VMs — no SaaS backend
