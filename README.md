@@ -8,7 +8,7 @@ No subscriptions.
 No cloud lock-in.
 No VM-hour pricing.
 
-⚡ What is CiderStack?
+What is CiderStack?
 
 CiderStack is a native macOS virtualization tool for Apple Silicon.
 
@@ -55,23 +55,9 @@ Install
 
 Download the latest signed installer:
 
-👉 https://github.com/ciderstack/CiderStack-Beta/releases
+👉 https://github.com/ciderstack/CiderStack-Release/releases/tag/release
 
 Open the .pkg and follow the installer.
-
-Quick example
-# Create a VM from template
-cider vm create ci-runner --template "Xcode-15"
-
-# Start and wait for IP
-cider vm start ci-runner --wait
-# → 192.168.64.12
-
-# Run commands
-cider ssh ci-runner -c "xcodebuild test"
-
-# Destroy when done
-cider vm destroy ci-runner
 
 Features
 
