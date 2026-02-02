@@ -146,9 +146,6 @@ No. CiderStack is built directly on Apple’s `Virtualization.framework`.
 
 ---
 
-## Project Status
-
-CiderStack is actively developed and production-ready.  
 Bug reports, security disclosures, and feature requests are welcome.
 
 ---
