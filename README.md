@@ -1,120 +1,159 @@
-CiderStack
+# CiderStack
+**Native macOS virtualization for Apple Silicon.**
 
-macOS virtualization you actually own.
+![Apple Silicon](https://img.shields.io/badge/Apple%20Silicon-M1%20%7C%20M2%20%7C%20M3-blue)
+![macOS](https://img.shields.io/badge/macOS-15%2B%20(Sequoia)-blue)
+![Notarized](https://img.shields.io/badge/Apple-Notarized-success)
+![License](https://img.shields.io/badge/License-Commercial-lightgrey)
 
-Create, run, and manage macOS virtual machines on your Mac — using Apple’s native hypervisor.
+CiderStack is a professional macOS virtualization platform for creating, managing, and automating macOS virtual machines locally using Apple’s native hypervisor stack.
 
-No subscriptions.
-No cloud lock-in.
-No VM-hour pricing.
+No subscriptions.  
+No cloud dependency.  
+No usage-based pricing.
 
-What is CiderStack?
+<p align="center">
+  <img
+    src="https://ciderstack.sfo3.cdn.digitaloceanspaces.com/Images/AllMachines.png"
+    alt="CiderStack managing multiple macOS virtual machines"
+    width="900"
+  />
+</p>
 
-CiderStack is a native macOS virtualization tool for Apple Silicon.
+---
 
-It lets you:
+## Overview
 
-Create macOS VMs from official IPSWs
+CiderStack is a native macOS virtualization solution designed for developers, IT teams, and organizations that require reliable, local macOS virtual machines on Apple Silicon hardware.
 
-Snapshot and restore instantly
+Built directly on Apple’s `Virtualization.framework`, CiderStack delivers native performance, fast snapshotting, and complete offline operation — without relying on cloud infrastructure or SaaS backends.
 
-Run CI jobs locally
+---
 
-Test MDM enrollments safely
+## Key Capabilities
 
-Automate everything from the CLI
+- Create macOS virtual machines from official Apple IPSW images
+- Snapshot and restore virtual machines instantly
+- Automate VM lifecycle operations via CLI
+- Run CI workloads locally on Apple Silicon
+- Safely test MDM enrollment and device management workflows
+- Maintain isolated macOS environments for testing and validation
 
-All on your own hardware.
+All virtual machines run entirely on **your hardware**.
 
-https://ciderstack.sfo3.cdn.digitaloceanspaces.com/Images/AllMachines.png
+---
 
-Why CiderStack?
+## Why CiderStack
 
-You own the VMs — no SaaS backend
+- **Local ownership** — virtual machines remain under your control
+- **Predictable licensing** — one-time purchase, no subscriptions
+- **Offline-first** — no required cloud services or telemetry
+- **Native performance** — built on Apple’s virtualization stack
+- **Automation-ready** — CLI-first design for scripting and CI pipelines
 
-Pay once — no subscriptions
+CiderStack provides a local alternative to cloud macOS runners and hosted virtualization platforms.
 
-Runs offline — zero cloud dependency
+---
 
-Native performance — Apple Virtualization.framework
+## System Requirements
 
-CLI-first — perfect for automation
+- macOS **15 Sequoia** or later
+- Apple Silicon (M-series)
+- Uses Apple’s built-in hypervisor
 
-If you’ve used Tart, Anka, or cloud macOS runners — this is the local version you’ve been missing.
+> **Platform limitation**  
+> Apple currently limits macOS virtualization to **two concurrently running macOS VMs per physical Mac**.  
+> There is no limit on the number of VMs that can be created or stored.
 
-Requirements
+---
 
-macOS 15 Sequoia or later
+## Installation
 
-Apple Silicon (M-series)
-
-Uses Apple’s built-in hypervisor
-
-⚠️ Apple limits macOS virtualization to 2 running VMs per Mac.
-Unlimited VMs can be created and stored.
-
-Install
-
-Download the latest signed installer:
+Download the latest **signed and notarized installer** from GitHub Releases:
 
 👉 https://github.com/ciderstack/CiderStack-Release/releases/tag/release
 
-Open the .pkg and follow the installer.
+1. Download the `.pkg` installer
+2. Open the installer and follow the on-screen instructions
+3. Launch CiderStack and begin creating virtual machines
 
-Features
+---
 
-Native Apple hypervisor
+## Free Trial
 
-Fast APFS snapshots (sub-second restore)
+CiderStack includes a **14-day free trial**.
 
-Templates & golden images
+The trial provides full access to all features and does not require a credit card.  
+At the end of the trial, a one-time license can be applied without reinstalling.
 
-Built-in SSH access
+---
 
-Unlimited local VMs
+## Feature Highlights
 
-No telemetry required
+- Native Apple hypervisor integration
+- APFS-backed snapshots with sub-second restore
+- VM templates and golden images
+- Built-in SSH access
+- Unlimited local VM creation
+- No mandatory telemetry
+- Fully functional without an internet connection
 
-Works completely offline
+---
 
-Common use cases
+## Common Use Cases
 
-CI / CD runners
+### Continuous Integration (CI)
+- Local macOS build and test runners
+- Reduced dependency on cloud-based macOS services
+- Deterministic, repeatable environments
 
-Local GitHub Actions alternatives
+### MDM & Device Management Testing
+- Snapshot → enroll → restore workflows
+- Safe testing for Jamf, Kandji, Mosyle, and similar platforms
+- Rapid iteration without reimaging hardware
 
-No macOS cloud costs
+### Application & OS Validation
+- Test across multiple macOS versions
+- Validate against beta releases
+- Isolated environments without affecting host systems
 
-MDM testing
+---
 
-Snapshot → enroll → restore instantly
+## Licensing & Pricing
 
-Perfect for Jamf, Kandji, Mosyle
+CiderStack is licensed per machine with a **one-time purchase**.
 
-App & OS testing
+| License | Intended Use | Price |
+|------|------|------|
+| HomeBrew | Personal / Individual | $20 |
+| Small Batch | Commercial / Organizational | $99 |
 
-Test Ventura → Sequoia safely
+Includes all **v1.x updates**.  
+No subscriptions or recurring fees.
 
-Run betas without touching your main Mac
+---
 
-Pricing
+## Frequently Asked Questions
 
-Pay once. Use forever.
+### Why is CiderStack not distributed through the Mac App Store?
+Apple does not permit macOS virtualization applications that use the current hypervisor framework to be distributed via the App Store.
 
-License	Price
-HomeBrew (personal)	$20 one-time
-Small Batch (commercial)	$99 one-time
+### Does CiderStack require telemetry or external services?
+No. CiderStack operates fully offline and does not require telemetry.
 
-Includes all v1.x updates.
-No subscriptions. Ever.
+### Is CiderStack based on UTM or other virtualization tools?
+No. CiderStack is built directly on Apple’s `Virtualization.framework`.
 
-❓ FAQ
+---
 
-Why not the App Store?
-Apple does not allow macOS virtualization apps using the current hypervisor framework.
+## Project Status
 
-Is telemetry required?
-No. CiderStack is local-first.
+CiderStack is actively developed and production-ready.  
+Bug reports, security disclosures, and feature requests are welcome.
 
-Is this a wrapper around UTM?
-No. Built directly on Virtualization.framework.
+---
+
+## Legal
+
+© CiderStack, LLC.  
+CiderStack is commercial software. Refer to the included license agreement for full terms.
