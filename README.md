@@ -1,7 +1,7 @@
 # CiderStack
 **Native macOS virtualization for Apple Silicon.**
 
-![Apple Silicon](https://img.shields.io/badge/Apple%20Silicon-M1–M4-blue)
+![Apple Silicon](https://img.shields.io/badge/Apple%20Silicon-M1–M5-blue)
 ![macOS](https://img.shields.io/badge/macOS-15%2B%20(Sequoia)-blue)
 ![Notarized](https://img.shields.io/badge/Apple-Notarized-success)
 ![License](https://img.shields.io/badge/License-Commercial-lightgrey)
