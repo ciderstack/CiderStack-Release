@@ -71,7 +71,7 @@ CiderStack provides a local alternative to cloud macOS runners and hosted virtua
 
 Download the latest **signed and notarized installer** from GitHub Releases:
 
-👉 https://github.com/ciderstack/CiderStack-Release/releases/tag/release
+👉 [https://github.com/ciderstack/CiderStack-Release/releases/tag/release](https://github.com/ciderstack/CiderStack-Release/releases)
 
 1. Download the `.pkg` installer
 2. Open the installer and follow the on-screen instructions
