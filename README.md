@@ -117,19 +117,6 @@ At the end of the trial, a one-time license can be applied without reinstalling.
 - Validate against beta releases
 - Isolated environments without affecting host systems
 
----
-
-## Licensing & Pricing
-
-CiderStack is licensed per machine with a **one-time purchase**.
-
-| License | Intended Use | Price |
-|------|------|------|
-| HomeBrew | Personal / Individual | $20 |
-| Small Batch | Commercial / Organizational | $99 |
-
-Includes all **v1.x updates**.  
-No subscriptions or recurring fees.
 
 ---
 
