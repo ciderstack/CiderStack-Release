@@ -1,3 +1,5 @@
+** THIS PROJECT IS NO LONGER IN DEVELOPMENT **
+
 # CiderStack
 **Native macOS virtualization for Apple Silicon.**
 
